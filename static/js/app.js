@@ -2,7 +2,7 @@ function init() {
     // Select the dropdown element
     var selector = d3.select("#selDataset");
     
-    // Populate the dropdown with subject ID's from the list of sample Names
+    // Populate the dropdown with subject IDs from the list of sample names
       d3.json("data/samples.json").then((data) => {
         var subjectIds = data.names;
         subjectIds.forEach((id) => {
@@ -87,7 +87,7 @@ function init() {
     };
     var data = [trace1];
     var layout = {
-        title: "Top Ten OTUs for Individual " +sample,
+        title: "OTUs per Sample" +sample,
         margin: {l: 100, r: 100, t: 100, b: 100}
     };
     Plotly.newPlot("bar", data, layout);  
