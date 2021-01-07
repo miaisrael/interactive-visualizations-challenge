@@ -59,7 +59,7 @@ function init() {
     });
 
     // Bubble Chart
-    var trace2 = {
+    var trace1 = {
         x: otu_ids,
         y: sample_values,
         text: otu_labels,
@@ -70,7 +70,7 @@ function init() {
         colorscale:"Electric"
         }
     };
-    var data = [trace2];
+    var data = [trace1];
     var layout = {
         title: 'Bacteria Cultures per Sample',
         showlegend: false,
