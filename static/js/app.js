@@ -30,7 +30,7 @@ function getPlot(id) {
           y: OTU_id,
           text: labels,
           marker: {
-            color: 'rgb(142,124,195)'},
+            color: 'rgb(51, 102, 255)'},
           type:"bar",
           orientation: "h",
       };
@@ -87,17 +87,16 @@ function getPlot(id) {
         {
         domain: { x: [0, 1], y: [0, 1] },
         value: parseFloat(wfreq),
-        title: { text: `Belly Button Washing Frequency: Scrubs per Week ` },
+        title: { text: "Belly Button Washing Frequency: Scrubs per Week" },
         type: "indicator",
-        
         mode: "gauge+number",
         gauge: { axis: { range: [null, 9] },
                  steps: [
-                  { range: [0, 2], color: "yellow" },
-                  { range: [2, 4], color: "cyan" },
-                  { range: [4, 6], color: "teal" },
-                  { range: [6, 8], color: "lime" },
-                  { range: [8, 9], color: "green" },
+                  { range: [0, 2], color: "azure" },
+                  { range: [2, 4], color: "cadetblue" },
+                  { range: [4, 6], color: "darkseagreen" },
+                  { range: [6, 8], color: "darkcyan" },
+                  { range: [8, 9], color: "darkslategrey" },
                 ]}
             
         }
